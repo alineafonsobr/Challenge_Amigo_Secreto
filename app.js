@@ -18,8 +18,8 @@ function adicionarAmigo(){
 
 function imprimirListaAmigos(tag, lista){  
     lista = padronizarLista(lista);  
-    let listaAmigos = document.getElementById("listaAmigos");
-    listaAmigos.innerHTML = lista.map(listaAmigosArray => `<li>${lista}</li>`).join('');    
+    let listaAmigos = document.getElementById(tag);
+    listaAmigos.innerHTML = lista.map(lista => `<li>${lista}</li>`).join('');    
 }
 
 
